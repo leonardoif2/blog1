@@ -202,8 +202,6 @@ h1 em { color: var(--accent); font-weight: 400; }
 .about-number { align-self: center; color: var(--accent); font: 400 clamp(160px, 25vw, 390px)/0.65 var(--display); opacity: 0.85; }
 .about-copy { max-width: 780px; }
 .about-copy > p:last-child { max-width: 530px; margin-top: 35px; color: var(--muted); font-size: 17px; line-height: 1.75; }
-footer { display: flex; justify-content: space-between; margin: 0 5vw; border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font: 400 10px/1 var(--mono); letter-spacing: 0.05em; }
-
 @media (max-width: 800px) {
   .site-header { padding: max(22px, env(safe-area-inset-top)) 22px 20px; }
   nav { gap: 18px; }
@@ -223,7 +221,6 @@ footer { display: flex; justify-content: space-between; margin: 0 5vw; border-to
   .archive-header span { display: none; }
   .about { grid-template-columns: 1fr; padding: 100px 22px; }
   .about-number { font-size: 190px; }
-  footer { margin: 0 22px; padding-bottom: max(28px, env(safe-area-inset-bottom)); }
 }
 
 @media (max-width: 390px) {
@@ -232,5 +229,4 @@ footer { display: flex; justify-content: space-between; margin: 0 5vw; border-to
   .hero, .notes-section, .about { padding-left: 18px; padding-right: 18px; }
   .eyebrow { letter-spacing: .1em; }
   .section-heading h2, .about h2 { font-size: 40px; }
-  footer { margin-inline: 18px; flex-direction: column; gap: 12px; }
 }

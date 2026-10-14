@@ -28,11 +28,14 @@ function renderNotes() {
   const grid = document.querySelector("#notes-grid");
   const count = document.querySelector("#note-count");
   const empty = document.querySelector("#empty-state");
+  const archiveHeader = document.querySelector("#archive-header");
 
   count.textContent = `${String(notes.length).padStart(2, "0")} ${notes.length === 1 ? "NOTA" : "NOTAS"}`;
 
   if (!notes.length) {
-    featured.innerHTML = "<p>Todavía no hay notas. La primera puede empezar hoy.</p>";
+    featured.hidden = true;
+    archiveHeader.hidden = true;
+    grid.hidden = true;
     empty.hidden = false;
     return;
   }
@@ -61,4 +64,3 @@ function renderNotes() {
 }
 
 renderNotes();
-document.querySelector("#year").textContent = new Date().getFullYear();
