@@ -75,9 +75,8 @@ nav a:hover::after { transform: scaleX(1); transform-origin: left; }
   position: relative;
   display: grid;
   min-height: 100svh;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1fr;
   align-items: center;
-  gap: 4vw;
   padding: 120px 8vw 80px;
 }
 .hero-copy { z-index: 2; max-width: 760px; }
@@ -108,29 +107,6 @@ h1 em { color: var(--accent); font-weight: 400; }
 .text-link span { display: inline-block; }
 .text-link:hover span { transform: translateY(4px); }
 
-.hero-mark {
-  position: relative;
-  display: grid;
-  width: min(30vw, 430px);
-  aspect-ratio: 1;
-  border: 1px solid var(--line);
-  place-items: center;
-  justify-self: center;
-}
-.hero-mark > span {
-  color: var(--accent);
-  font: 400 clamp(130px, 18vw, 280px)/1 var(--display);
-}
-.hero-mark > p {
-  position: absolute;
-  right: -10%; bottom: 8%;
-  margin: 0;
-  background: var(--paper);
-  padding: 10px;
-  font: 400 11px/1.4 var(--mono);
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
 
 .notes-section { padding: 130px 8vw; background: #242622; color: var(--paper); }
 .section-heading {
@@ -205,8 +181,6 @@ h1 em { color: var(--accent); font-weight: 400; }
   .hero { min-height: 100svh; grid-template-columns: 1fr; align-content: center; padding: 125px 22px 65px; }
   h1 { margin-bottom: 28px; font-size: clamp(72px, 23vw, 112px); line-height: .78; }
   .text-link { min-height: 44px; align-items: center; }
-  .hero-mark { width: min(70vw, 310px); margin: 35px auto 10px; }
-  .hero-mark > p { right: -8px; }
   .notes-section { padding: 90px 22px; }
   .section-heading { align-items: flex-start; flex-direction: column; }
   .featured-note { min-height: 0; grid-template-columns: 1fr; gap: 36px; padding: 42px 0 48px; }
