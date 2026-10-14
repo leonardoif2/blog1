@@ -53,6 +53,9 @@ function renderNotes() {
     </article>
   `;
 
+  archiveHeader.hidden = archive.length === 0;
+  grid.hidden = archive.length === 0;
+
   grid.innerHTML = archive.map((note) => `
     <article class="note-card">
       <span class="number">${String(notes.length - index - 1).padStart(2, "0")}</span>
