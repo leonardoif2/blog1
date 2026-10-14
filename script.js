@@ -50,8 +50,8 @@ function renderNotes() {
     </article>
   `;
 
-  grid.innerHTML = archive.map((note, index) => `
-    <article class="note-card" style="--delay: ${index * 90}ms">
+  grid.innerHTML = archive.map((note) => `
+    <article class="note-card">
       <span class="number">${String(notes.length - index - 1).padStart(2, "0")}</span>
       <time datetime="${safeText(note.date)}">${safeText(shortDateFormatter.format(parseDate(note.date)))}</time>
       <h3>${safeText(note.title)}</h3>
@@ -62,14 +62,3 @@ function renderNotes() {
 
 renderNotes();
 document.querySelector("#year").textContent = new Date().getFullYear();
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-
-document.querySelectorAll(".reveal, .note-card").forEach((element) => observer.observe(element));
