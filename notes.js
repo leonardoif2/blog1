@@ -2,6 +2,13 @@
 // Usa la fecha en formato AAAA-MM-DD y la hora en formato HH:MM.
 window.NOTES = [
   {
+    date: "2026-10-15",
+    time: "11:46",
+    title: "Buenos días, linda. ❤️",
+    text: "Espero que hayas dormido bien y que tengas un bonito día. Ayer tuve mi primera sesión de terapia, la vdd estaba medio nervioso porque no sabía muy bien qué esperar, pero me cayó muy bien el doc, creo que me va a ayudar bastante a entender algunas cosas y trabajar en mí.\n\nTambién quería pedirte perdón por tantos mensajes que te mandé ayer, creo que me pasé un poquito jeje. A veces me gana lo que siento y termino escribiendo más de lo que debería.\n\nEn fin, solo quería contarte un poquito de mi día y desearte que hoy te vaya muy bonito. Te extraño mucho, linda. Cuídate. ❤️",
+    signature: ""
+  },
+  {
     date: "2026-10-14",
     time: "13:40",
     title: "14 de octubre",
